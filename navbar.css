@@ -1,0 +1,172 @@
+//navbar //
+
+body{
+   font-family: "open sans",sans-serif;
+   
+}
+a{
+    color: #5c9f24;
+}
+a:hover{
+    color: #74c92d;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "roboto";sans-serif;
+}
+#header {
+    background: #000000;
+    padding: 15px;
+}
+#header .logo { 
+    text-decoration: none;
+    font-size: 28px;
+    margin:0;
+    padding:0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#header .logo a{
+    color: #fff;
+    text-decoration: none;
+}
+#header .logo a{
+    color:#BB123D;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* navigation Menu */
+
+.nav-menu ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.nav-menu > ul {
+    display: flex;
+}
+.nav-menu > ul > li {
+    position: relative;
+    white-space:nowrap ;
+    padding: 10px 0 10px 22px;
+}
+.nav-menu a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    color: rgba(255,255,255,0.7);
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto",sans-serif;
+    padding: 0 4px;
+    text-transform: uppercase;
+}
+.nav-menu > ul > li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #71e215;
+    visibility: hidden;
+    width: 0px;
+    transition:  all 0.3s ease-in-out;
+}
+.nav-menu a:hover::before,
+.nav-menu li:hover > a::before,
+.nav-menu .active > a::before {
+    visibility: visible;
+    width: 100%;
+}
+.nav-menu a:hover,
+.nav-menu .active > a,
+.nav-menu li:hover > a {
+    color:#fff;
+}
+@media (max-width:768px) {
+    margin: 0 48px 0 0;
+    padding: 6px 18px;
+}
+//Mobile Navigation Menu//
+.mobile-nav-toggle {
+    position: fixed;
+    top: 18px;
+    right: 15px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+}
+.mobile-nav-toggle i {
+    color: #fff;
+}
+.mobile-nav {
+    position: fixed;
+    top: 55px;
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #fff;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+.mobile-nav-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(17,17,17,0.6);
+    overflow: :hidden;
+    display: none;
+    transition: ease-in-out 0.2s;
+}
+.mobile-nav-active {
+    overflow:hidden;
+}
+.mobile-nav-active .mobile-nav {
+    opacity: 1;
+    visibility: visible;
+}
+.mobile-nav * {
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.mobile-nav a{
+    display: block;
+    position: relative;
+    color: #2a2a2a;
+    padding:10px 20px;
+    font-weight: 500;
+    outline: none;
+    font-size: 15px;
+}
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+    color: #77ff08,
+    text-decoration: none;
+}
+.mobile-nav a:hover {
+    background: #000000;
+    border: 2px solid #000000;
+}
+.background-image {
+    background: url( img/img5.jpg) no repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
