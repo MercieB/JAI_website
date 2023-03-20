@@ -34,12 +34,15 @@ h1,h2,h3,h4,h5,h6 {
 #header .logo a{
     color:#BB123D;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    font-weight: bold;
 }
 /* navigation Menu */
 
 .nav-menu ul {
-    margin:0;
-    padding:0;
+    margin-right: 20px;
+    float: right;
+  
     list-style: none;
 }
 .nav-menu > ul {
@@ -85,7 +88,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav-menu li:hover > a {
     color:#fff;
 }
-@media (max-width:768px) {
+@media screen  (max-width:768px) {
     margin: 0 48px 0 0;
     padding: 6px 18px;
 }
