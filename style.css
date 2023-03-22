@@ -31,7 +31,7 @@
     margin: 70px auto 0;
 }
 .banner-btn a{
-    width:150px;
+    width:200px;
     text-decoration: none;
     display: inline-block;
     margin: 0 10px;
@@ -143,49 +143,82 @@ nav ul li a{
     align-items: center;
     text-align: center;
 }
-.features {
+.features{
     flex-basis: 50%;
 }
-#service{
-    width: 100%;
-    padding: 70px 0;
-    background: #d6d2d2;
+.features-img{
+    flex-basis: 50%;
+    margin:auto;
 }
-.service-box{
-    width: 80%;
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+}   
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+footer{
+    background: #d8d3d3;
+    height:auto;
+    width: 100vw;
+    font-family: cursive;
+    padding-top: 40px;
+}
+.footer-content{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around
-    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
-.single-service{
-    flex-basis: 60%;
-    text-align:center;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color:#fff;
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
 }
-.single-service img{
-    width:100%;
-    border-radius: 7px;
+footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
 }
-
-#footer{
-    padding: 100px;
-    background: #bab2b2
-}
-.footer-row{
-    width: 80%;
-    margin: 0 auto;
+.socials{
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
 }
-.footer-left, .footer-right{
-    flex-basis: 45%;
-    padding:10px;
-    margin-bottom: 20px;
+.socials li{
+    margin: 0 10px;
 }
-.footer-right{
-    text-align: right;
+.socials a{
+    text-decoration: none;
+    color:#000
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color:aqua;
+}
+.footer-bottom{
+    background: #6a6868;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
